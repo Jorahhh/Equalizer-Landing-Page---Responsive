@@ -1,0 +1,658 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    min-height: 100vh;
+    min-width:  375px;
+    background-color: hsl(20, 33%, 98%);
+    background-image: url("assets/bg-main-mobile.png");
+    background-position: right -40vh top -45vh;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    text-align: left;
+    margin: 12% 0 15% 6%;
+    width: 85%;
+
+}
+.logo img{
+    width: 146px;
+}
+
+
+header{
+    margin: 8% 6%;
+}
+
+header h1{
+    font-size: 2.5em;
+    line-height: 1.2em;
+    width: 99%;
+    color: #191826;
+}
+
+header p{
+    width: 99%;
+    margin-top: 6%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8em;
+    padding-right: -10px;
+    color: hsl(244, 23%, 12%);
+}
+.iphone{
+    background-color: hsl(244, 23%, 12%);
+    background-image: url("assets/bg-pattern-2.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 280px;
+    width: 100%;
+    height: 400px;
+    margin-top: 35%;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+.iphone img{
+    width: 210px;
+    margin-top: -24%;
+
+
+}
+
+.info {
+    border-radius: 15px;
+    background-color: hsl(12, 94%, 65%);
+    width: 100%;
+    height: 570px;
+    z-index: 10;
+    margin-top: -5%;
+    margin-bottom: 8%;
+    color: hsl(20, 33%, 98%);
+}
+
+
+.info h2{
+    font-size: 2em;
+    font-weight: 700;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.info p{
+    width: 75%;
+    line-height: 1.8em;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.info span{
+    font-size: 4.5em;
+    font-weight: 700;
+    margin-top: 4%;
+    margin-right: 8%;
+}
+
+.price p{
+    display: flex;
+    align-items: center;
+    margin-top: 10%
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 12% auto;
+    width: 80%;
+    height: 150px;
+}
+
+button{
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.ios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: hsl(244, 23%, 12%);
+    color: hsl(20, 33%, 98%);
+}
+.ios img{
+    margin-right: 2%;
+}
+
+button,.ios:hover{
+    background-color: hsl(177, 68%, 64%);
+    transition: 0.2s;
+}
+
+.android{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: hsl(20, 33%, 98%);
+    color: hsl(244, 23%, 12%);
+}
+.android img{
+    margin-right: 2%;
+}
+
+button,.android:hover{
+    background-color: hsl(33, 100%, 70%) ;
+}
+
+footer {
+    display: flex;
+    height: 580px;
+    flex-direction: column;
+}
+
+footer p{
+    text-align: left;
+    width: 80%;
+    margin-top: -5%;
+    margin-left: 6%;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+footer a{
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(244, 23%, 12%);
+}
+
+.icons{
+    margin: 15% 0 0 6%;
+    width: 75%;
+}
+
+footer img {
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+footer img.facebook:hover{
+    background-color: hsl(33, 100%, 70%);
+}
+footer img.instagram:hover{
+    background-color: hsl(33, 100%, 70%);
+}
+footer img.twitter:hover{
+    background-color: hsl(33, 100%, 70%);
+}
+
+
+
+
+@media screen and (min-width: 500px){
+
+    body{
+        background-color: hsl(20, 33%, 98%);
+        background-image: url("assets/bg-pattern-1.svg"),
+        url("assets/bg-main-tablet.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: right -4vh top -3vh, right -15vh top -20vh;
+        background-size: 267px, auto;
+    }
+
+    .logo {
+        text-align: left;
+        margin: 10% 0 12% 6%;
+        width: 85%;
+
+    }
+    .logo img{
+        width: 120px;
+    }
+
+    header{
+        margin: 2% 6%;
+    }
+
+    header h1{
+        font-size: 3.5rem;
+        line-height: 1.2em;
+        width: 75%;
+    }
+
+    header p{
+        width: 70%;
+        margin-top: 2%;
+    }
+
+    .iphone{
+        width: 90%;
+        height: 600px;
+        margin-top: 28%;
+        margin-left: 4%;
+        text-align: left;
+        justify-content: center;
+        align-content: center;
+        border-radius: 15px;
+    }
+
+    .iphone img{
+        width: 270px;
+        margin-top: -16%;
+        margin-left: 7%;
+    }
+
+    .info {
+        width: 400px;
+        height: 560px;
+        position: relative;
+        top: -380px;
+        left: 260px;
+        z-index: 1;
+        color: hsl(20, 33%, 98%);
+    }
+
+    footer {
+        margin-top: -60%;
+        margin-bottom: 100px;
+    }
+
+    footer p{
+        text-align: left;
+        width: 60%;
+        margin-top: -6%;
+    }
+
+    .icons{
+        position: relative;
+        text-align: right;
+        margin: 0;
+        bottom: 8%;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    body{
+        background-position: right  2vh top -2vh, right -10vh top -40vh;
+        background-size: 270px, auto;
+    }
+
+    .logo {
+        margin: 8% 0 8% 6%;
+
+    }
+
+
+    header h1{
+        font-size: 3.5rem;
+        line-height: 1.2em;
+        width: 78%;
+    }
+
+    header p{
+        width: 65%;
+    }
+
+    .iphone{
+        background-size: 285px;
+        margin-top: 24%;
+    }
+
+    .iphone img{
+        width: 275px;
+        margin-left: 10%;
+    }
+
+    .info {
+        top: -400px;
+        left: 460px;
+        width: 410px;
+        height: 580px;
+    }
+
+    footer {
+        margin-bottom: 80px;
+    }
+
+    footer p{
+        margin-top: -8%;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    body{
+        background-image: url("assets/bg-pattern-1.svg"),
+        url("assets/bg-main-desktop.png");
+        background-repeat: no-repeat,no-repeat;
+        background-position: right 2vh top -2vh, right -30vh top -20vh;
+        background-size: 290px, auto;
+    }
+
+    .logo {
+        margin: 5% 0 5% 8%;
+
+    }
+    .logo img{
+        width: 130px;
+    }
+
+
+    header{
+        margin: 4% 0 0 8%;
+    }
+
+    header h1{
+        font-size: 4rem;
+        line-height: 1.2em;
+        width: 60%;
+    }
+
+    header p{
+        width: 55%;
+        font-size: 1.1rem;
+    }
+
+    .iphone{
+        background-image: url("assets/bg-pattern-2.svg");
+        background-repeat: no-repeat;
+        background-position: left 40% top;
+        background-size: 300px;
+        width: 85%;
+        height: 600px;
+        margin-top: 24%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .iphone img{
+        width: 280px;
+        margin-top: -14%;
+        margin-left: 12%;
+    }
+
+    .info {
+        width: 420px;
+        height: 580px;
+        top: -360px;
+        left: 650px;
+
+    }
+
+    footer {
+        margin-top: -40%;
+        margin-bottom: 80px;
+    }
+
+    footer p{
+        margin-top: -4%;
+        margin-left: 8%;
+        font-size: 1.2em;
+    }
+    .icons{
+        bottom: 10%;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    body{
+        background-repeat: no-repeat, no-repeat;
+        background-position: right  top -3vh, right -8vh top -8vh;
+        background-size: 312px, auto;
+    }
+
+    .logo {
+        margin: 4% 0 6% 11%;
+
+    }
+    .logo img{
+    }
+
+    header{
+        margin: 3% 0 0 11%;
+    }
+
+    header h1{
+        font-size: 5.2rem;
+        width: 75%;
+    }
+
+    header p{
+        width: 68%;
+        font-size: 1.28rem;
+    }
+
+    .iphone{
+        background-position: left 42% top -25%;
+        background-size: 312px;
+        width: 78%;
+        margin-top: 24%;
+        margin-left: 11%;
+        margin-right: 10%;
+    }
+
+    .iphone img{
+        width: 320px;
+        margin-top: -18%;
+        margin-left: 9%;
+    }
+
+    .info {
+        width: 420px;
+        height: 580px;
+        top: -410px;
+        left: 760px;
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: -45%;
+        margin-bottom: 80px;
+    }
+
+    footer p{
+        margin-top: 0;
+        margin-left: -16%;
+        font-size: 1.2em;
+        width: 70%;
+    }
+
+    footer a{
+        font-size: 1em;
+    }
+
+    .icons{
+        bottom: 0;
+        left: -11%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    body{
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 1vh top -4vh, right 1vh top -10vh;
+        background-size: 420px, cover;
+    }
+
+    .logo {
+        margin: 5% 0 5% 11%;
+    }
+
+    .logo img{
+        width: 200px;
+    }
+
+    header{
+        margin: 4% 0 0 11%;
+    }
+
+    header h1{
+        font-size: 7rem;
+        width: 75%;
+    }
+
+    header p{
+        width: 65%;
+        font-size: 2rem;
+    }
+
+
+    .iphone{
+        background-position: left 43% top -50%;
+        background-size: 400px;
+        width: 78%;
+        height: 700px;
+        margin-top: 20%;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+
+    .iphone img{
+        width: 380px;
+        margin-top: -15%;
+        margin-left: 13%;
+    }
+
+    .info {
+        width: 500px;
+        height: 640px;
+        top: -400px;
+        left: 1030px;
+    }
+
+    footer {
+        margin-top: -35%;
+        margin-bottom: 80px;
+    }
+
+    footer p{
+        margin-top: 4%;
+        margin-left: -16%;
+        font-size: 1.2em;
+        width: 70%;
+    }
+
+    .icons{
+        bottom: 0;
+        left: -11%;
+    }
+
+    footer img{
+        width: 5%;
+    }
+}
+
+@media screen and (min-width: 2560px){
+
+    body{
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 1vh top -4vh, right 1vh top -10vh;
+        background-size: 560px, cover;
+    }
+
+    .logo {
+        margin: 5% 0 4% 11%;
+    }
+
+
+    header h1{
+        font-size: 8rem;
+        width: 70%;
+    }
+
+    header p{
+        width: 60%;
+        font-size: 2.2rem;
+    }
+
+    .iphone{
+        background-position: left 50% top -5%;
+        background-size: 460px;
+        width: 82%;
+        height: 800px;
+        margin-top: 18%;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+
+    .iphone img{
+        width: 450px;
+        margin-top: -12%;
+        margin-left: 15%;
+    }
+
+    .info {
+        width: 600px;
+        height: 700px;
+        top: -400px;
+        left: 1500px;
+    }
+
+    footer {
+        margin-top: -25%;
+        margin-bottom: 100px;
+    }
+
+    footer p{
+        margin-top: 4%;
+        margin-left: -16%;
+        font-size: 1.8em;
+        width: 70%;
+    }
+
+    footer a{
+        font-size: 1em;
+    }
+
+
+
+}
+
+
+
+
+
+
+
